@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 1 - Menghitung Luas Bangun Datar</title>
+</head>
+<body>
+  <h1>Menghitung Luas Bangun Datar</h1>
+
+  <script>
+    function luasPersegiPanjang(panjang, lebar) {
+      let luas = panjang * lebar; 
+      return luas;
+    }
+
+    function luasBujurSangkar(sisi) {
+      let luas = sisi * sisi;
+      return luas;
+    }
+
+    function luasSegitiga(alas, tinggi) {
+      let luas = 0.5 * alas * tinggi;
+      return luas;
+    }
+
+    let panjang = 12;
+    let lebar = 7;
+    let sisi = 9;
+    let alas = 10;
+    let tinggi = 6;
+
+    let hasilPersegiPanjang = luasPersegiPanjang(panjang, lebar);
+    let hasilBujurSangkar = luasBujurSangkar(sisi);
+    let hasilSegitiga = luasSegitiga(alas, tinggi);
+
+    document.write("<h3>1. Persegi Panjang</h3>");
+    document.write("Panjang = " + panjang + ", Lebar = " + lebar + "<br>");
+    document.write("Luas = " + panjang + " x " + lebar + " = " + hasilPersegiPanjang + "<br>");
+
+    document.write("<h3>2. Bujur Sangkar</h3>");
+    document.write("Sisi = " + sisi + "<br>");
+    document.write("Luas = " + sisi + " x " + sisi + " = " + hasilBujurSangkar + "<br>");
+
+    document.write("<h3>3. Segitiga</h3>");
+    document.write("Alas = " + alas + ", Tinggi = " + tinggi + "<br>");
+    document.write("Luas = 1/2 x " + alas + " x " + tinggi + " = " + hasilSegitiga + "<br>");
+  </script>
+</body>
+</html>
